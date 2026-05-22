@@ -33,18 +33,18 @@
 <body class="bg-white text-black pt-[70px] overflow-x-hidden w-full">
     <header class="fixed top-0 right-0 left-0 z-[100] flex items-center justify-between h-[70px] px-6 md:px-16 bg-[#007f73] backdrop-blur-md transition-all duration-500 ease-out">
     
-    <a href="#home" class="text-[20px] text-white font-bold cursor-pointer transition-all duration-300 ease-out hover:scale-105">
+    <a href="#home" class="text-2xl md:text-5xl text-white font-bold cursor-pointer transition-all duration-300 ease-out hover:scale-105">
         Napat Putsorn
     </a>
 
     <i class="bx bx-menu text-white text-3xl cursor-pointer md:!hidden" id="menu-icon"></i>
 
-    <nav class="navbar hidden md:flex items-center gap-10">
-        <a href="#home" class="text-[1.1rem] text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Home</a>
-        <a href="#about" class="text-[1.1rem] text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">About</a>
-        <a href="#services" class="text-[1.1rem] text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Services</a>
-        <a href="#testimonial" class="text-[1.1rem] text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Testimonial</a>
-        <a href="#contact" class="text-[1.1rem] text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Contact</a>
+    <nav class="navbar hidden md:flex text-xl md:text-2xl items-center gap-10">
+        <a href="#home" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Home</a>
+        <a href="#about" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">About</a>
+        <a href="#project" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Projects</a>
+        <a href="#testimonial" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Testimonial</a>
+        <a href="#contact" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Contact</a>
     </nav>
     
     </header>
@@ -68,44 +68,43 @@
             <a href="mailto:napatput31@hotmail.com" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/mail.png" alt="Mail" class="w-[43px] h-[42px]"></a>
         </div>
         
-        <a href="#" class="btn self-start bg-[#007f73] text-white px-6 py-2 rounded-full font-semibold text-[1rem] shadow-none transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Download CV</a>
+        <a href="#" class="self-start bg-[#007f73] text-white px-6 py-2 rounded-full font-semibold text-[1rem] shadow-none transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Download CV</a>
     </div>
 
 </section>
 
-            <section class="flex items-center justify-center gap-[2rem] bg-[#d5fdf9]" id="about">
+            <section class="md:flex items-center justify-center gap-[3rem] bg-[#d5fdf9] min-h-screen py-2 px-[5%]" id="about">
                 <div class="px-0 py-16">
-                    <h2 class="text-[6rem]/[1.2] font-bold text-left ">About <span>Me</span></h2>
-                    <h3 class="text-5xl">I'm a <span>Network Engineer</span></h3>
-                    <p class="text-[1.6rem] mt-8 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis modi culpa harum ipsam quis praesentium doloremque, reiciendis eveniet, porro similique repellendus, sint maxime id!</p>
-                    <a href="" class="btn self-start bg-[#007f73] text-white px-8 py-4 rounded-full font-semibold text-[1.6rem] shadow-none transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Read More</a>
+                    <h2 class="text-[2rem] md:text-[4rem] font-bold text-left ">About <span>Me</span></h2>
+                    <p class="text-[1rem] mt-4 mb-6 max-w-[650px]"> <span class="text-3xl font-bold">Engineering student at Chulalongkorn University</span>  bridging the gap between Network Engineering and Software Development. Alongside my experience designing simulated SOHO networks and mastering Cisco IOS configurations, I build full-stack web applications. This unique blend allows me to approach network infrastructure with a modern, automation-ready mindset.</p>
+                    <a href="" class="self-start bg-[#007f73] text-white px-6 py-3 rounded-full font-bold text-[1.2rem] shadow-none transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Read More</a>
                 </div>
 
                 <div class="about-img">
-                    <img src="" alt="About Image" class="w-[25vw] rounded-full shadow-[0_0_25px_#007f73] cursor-pointer animate-[floatImage_4s_ease-in-out_infinite] mr-16 transition-all duration-400 ease-out hover:shadow-[0_0_25px_#007f73,0_0_35px_#007f73,0_0_45px_#007f73]">
+                    <img src="img\ece-hero-research_400x500.jpg" alt="About Image" class="w-[50vw] md:w-[25vw] h-90 rounded shadow-[0_0_25px_#007f73] cursor-help md:animate-[floatImage_4s_ease-in-out_infinite] md:mr-16 mb-8 transition-all duration-400 ease-out hover:shadow-[0_0_25px_#007f73,0_0_35px_#007f73,0_0_45px_#007f73]">
                 </div>
             </section>
     
-            <section class="services" id="services">
-                <h2 class="heading mb-[5rem]">My <span>Services</span></h2>
+            <section class="min-h-screen pt-[100px] pb-10 md:pb-0 items-center justify-center bg-white" id="project">
+                <h2 class="text-[2rem] md:text-[4rem] font-bold text-center pb-10">My <span>Projects</span></h2>
 
-                <div class="services-container flex items-center justify-center flex-wrap gap-8">
+                <div class="items-center justify-center grid grid-cols-1 md:grid-cols-3 flex-wrap gap-8">
     
-    <div class="services-box flex-1  bg-[--snd-bg-color] py-[6rem] px-[2rem] rounded-[2rem] text-center border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
-        <i class="bx bx-spanner text-[7rem] text-[--main-color]"></i>
-        <h3 class="text-[2.6rem] font-bold mt-4">Network Technician</h3>
-        <p class="text-[1.6rem] mt-4 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste laboriosam accusantium voluptate voluptatibus, aut quae et quos dolore temporibus.</p>
+    <div class="flex-1 basis-[30rem] bg-[--snd-bg-color] sm-block rounded-xl text-center place-content-center overflow-hidden border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+        <img src="img\projectBun1remake.png" alt="Project Hotel Booking Bun1remake" class="max-w-full w-full mx-auto border-b-5">      
+        <h3 class="text-[2rem] font-bold mt-4">Bun1: Hotel Booking</h3>
+        <p class="text-[1.5em] mt-4 mb-12 max-w-[400px]">A responsive hotel booking web application build using Express.js framework in Typescript with Mongodb as database.</p>    
         <a href="" class="btn inline-block bg-[#007f73] text-white px-[2.8rem] py-[1rem] rounded-[4rem] font-semibold text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Read More</a>
     </div>
 
-    <div class="services-box flex-1 basis-[30rem] bg-[--snd-bg-color] py-[6rem] px-[2rem] rounded-[2rem] text-center border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+    <div class="flex-1 basis-[30rem] bg-[--snd-bg-color] py-[6rem] px-[2rem] rounded-[2rem] text-center border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
         <i class="bx bx-folder-open text-[7rem] text-[--main-color]"></i>
         <h3 class="text-[2.6rem] font-bold mt-4">Network Engineer</h3>
         <p class="text-[1.6rem] mt-4 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste laboriosam accusantium voluptate voluptatibus, aut quae et quos dolore temporibus.</p>
         <a href="" class="btn inline-block bg-[#007f73] text-white px-[2.8rem] py-[1rem] rounded-[4rem] font-semibold text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Read More</a>
     </div>
 
-    <div class="services-box flex-1 basis-[30rem] bg-[--snd-bg-color] py-[6rem] px-[2rem] rounded-[2rem] text-center border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+    <div class="flex-1 basis-[30rem] bg-[--snd-bg-color] py-[6rem] px-[2rem] rounded-[2rem] text-center border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
         <i class="bx bx-code text-[7rem] text-[--main-color]"></i>
         <h3 class="text-[2.6rem] font-bold mt-4">Network Analyst</h3>
         <p class="text-[1.6rem] mt-4 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste laboriosam accusantium voluptate voluptatibus, aut quae et quos dolore temporibus.</p>
@@ -127,7 +126,7 @@
                         <div class="rating">
                             <i class="bx bx-star" id="star"></i>
                             <i class="bxUpda mx-[0.35rem] p-6 text-[1.6rem] text-black font-bold bg-white rounded-[0.8rem] border-[0.25rem] border-[#007f73] outline-none">
-    </div>
+                        
     
     <textarea name="message" cols="30" rows="10" placeholder="Your Message" 
               class="w-full p-6 text-[1.6rem] text-black font-bold bg-white rounded-[0.8rem] border-[0.25rem] border-[#007f73] outline-none resize-none my-[0.7rem]"></textarea>
