@@ -3,166 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+
+            --animate-float-image: floatImage 4s ease-in-out infinite;
+            --color-main-color: #007f73;
+            --color-bg-color: #ffffff;
+            --color-snd-bg-color: #f1f5f9;
+        }
+        @keyframes floatImage {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        html, body {
+    scroll-behavior: smooth;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    width: 100vw;
+}
+    </style>
     <title>Portfolio</title>
 </head>
-<body>
-    <header class="header">
-        <a href="#home" class="logo">Napat Putsorn</a>
+<body class="bg-white text-black pt-[70px] overflow-x-hidden w-full">
+    <header class="fixed top-0 right-0 left-0 z-[100] flex items-center justify-between h-[70px] px-6 md:px-16 bg-[#007f73] backdrop-blur-md transition-all duration-500 ease-out">
+    
+        <a href="#home" class="text-2xl md:text-5xl text-white font-bold cursor-pointer transition-all duration-300 ease-out hover:scale-105">
+            Napat Putsorn
+        </a>
 
-        <i class="bx bx-menu" id="menu-icon""></i>
+        <i class="bx bx-menu text-white text-3xl cursor-pointer md:!hidden" id="menu-icon"></i>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#testimonial">Testimonial</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar hidden md:flex text-xl md:text-2xl items-center gap-10">
+            <a href="#home" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Home</a>
+            <a href="#about" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">About</a>
+            <a href="#project" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Projects</a>
+            <a href="#certificate" class="text-white font-bold transition-all duration-300 ease-out hover:text-black [&.active]:text-black">Certificates</a>
         </nav>
-        </header>
-            <section class="home" id="home">
-                
-                <div class="home-img">
-                    <img src="img/IMG_4295.JPG" alt="Profile Image">
-                </div>
-                <div>   
-                <div class="home-content">
-                    <h3>Hello,</h3>
-                    <h1>Napat Putsorn</h1>
-                    <h3>And I'm a <span class="multiple-text ">Network Engineer</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos atque est, vitae voluptates numquam itaque id corporis incidunt commodi saepe iure eaque reprehenderit ducimus corrupti.</p>
-                </div>
-
-                <div class="social-media">
-                    <a href="#"><img src="img/linkedin.png" alt="" class="sm-img"></a>
-                    <a href="#"><img src="img/github.png" alt="" class="sm-img"></a>
-                    <a href="#"><img src="img/instagram.png" alt="" class="sm-img"></a>
-                    <a href="#"><img src="img/mail.png" alt="" class="sm-img"></a>
-                </div>
-                <a href="#" class="btn">Download CV</a>
-                </div>
-            </section>
-
-            <section class="about" id="about">
-                <div class="about-content">
-                    <h2 class="heading">About <span>Me</span></h2>
-                    <h3>I'm a <span>Network Engineer</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis modi culpa harum ipsam quis praesentium doloremque, reiciendis eveniet, porro similique repellendus, sint maxime id!</p>
-                    <a href="" class="btn">Read More</a>
-                </div>
-
-                <div class="about-img">
-                    <img src="" alt="About Image">
-                </div>
-            </section>
     
-            <section class="services" id="services">
-                <h2 class="heading">My <span>Services</span></h2>
+    </header>
 
-                <div class="services-container">
-                    <div class="services-box">
-                        <i class="bx bx-spanner"></i>
-                        <h3>Network Technician</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste laboriosam accusantium voluptate voluptatibus, aut quae et quos dolore temporibus itaque modi non. Sapiente, praesentium?</p>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-                
-                    <div class="services-box">
-                        <i class="bx bx-folder-open"></i>
-                        <h3>Network Engineer</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste laboriosam accusantium voluptate voluptatibus, aut quae et quos dolore temporibus itaque modi non. Sapiente, praesentium?</p>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-                
-                    <div class="services-box">
-                        <i class="bx bx-code"></i>
-                        <h3>Network Analyist</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae iste laboriosam accusantium voluptate voluptatibus, aut quae et quos dolore temporibus itaque modi non. Sapiente, praesentium?</p>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-                </div>
-            </section>
+    <!-- Home Session -->
 
-            <!-- Testimonial Section -->
-
-            <section class="testimonial" id="testimonial">
-                <div class="testimonial-box">
-                    <h2 class="heading">Testimonials</h2>
-                </div>
-                <div class="wrapper">
-                    <div class="testimonial-item">
-                        <img src="" alt="">
-                        <h2>Arden</h2>
-                        <div class="rating">
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis fugit necessitatibus, nam sint, modi aperiam qui mollitia recusandae suscipit quasi. Voluptatibus harum odit repellat!</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="" alt="">
-                        <h2>Arden</h2>
-                        <div class="rating">
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis fugit necessitatibus, nam sint, modi aperiam qui mollitia recusandae suscipit quasi. Voluptatibus harum odit repellat!</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="" alt="">
-                        <h2>Arden</h2>
-                        <div class="rating">
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                            <i class="bx bx-star" id="star"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officiis fugit necessitatibus, nam sint, modi aperiam qui mollitia recusandae suscipit quasi. Voluptatibus harum odit repellat!</p>
-                    </div>
-                </div>
-            </section>
+    <section id="home" class="min-h-screen pt-[100px] md:pt-0 md:flex pb-10 md:pb-0 items-center justify-center gap-16 px-[5%] bg-white">
     
-            <!-- Contact Section -->
-             <section class="contact" id="contact">
-                <h2 class="heading">Contract <span>Me</span></h2>
+        <a href="https://shorturl.at/Y1uH4" target="_blank">
+            <img src="img/IMG_4295.JPG" alt="Profile Image" class="w-[50vw] md:w-[25vw] rounded-full shadow-[0_0_25px_#007f73] cursor-help animate-[floatImage_4s_ease-in-out_infinite] mx-auto md:mr-16 mb-8 transition-all duration-400 ease-out hover:shadow-[0_0_25px_#007f73,0_0_35px_#007f73,0_0_45px_#007f73]">
+        </a>
 
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email" name="Email">
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Phone Number">
-                        <input type="text" placeholder="Email Subject">
-                    </div>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="btn">
-                </form>
-             </section>
+        <div class="home-content flex flex-col justify-center max-w-[600px] ml-8 md:ml-0 ">
+            <h3 class="md:text-5xl text-3xl font-bold">Hello,</h3>
+            <h1 class="md:text-6xl text-4xl font-bold leading-[1.3]">Napat Putsorn</h1>
+            <h3 class="md:text-5xl text-2xl font-bold mb-4">And I'm a <span class="text-[#007f73] multiple-text"></span></h3>
+            
+            <p class="text-[0.75rem] md:text-[1.25rem] mb-6 leading-relaxed">focused on networking and cybersecurity with technical skills in Cisco configuration, TCP/IP, and C++ <span class="hidden md:inline">, alongside projects like an LLM web app and SOHO network design , complemented by event IT and medical support experience.</span></p>
+            
+            <div class="social-media flex items-center gap-4 mb-6">
+                <a href="https://www.linkedin.com/in/napat-putsorn-06199537a/" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/linkedin.png" alt="LinkedIn" class="w-[43px] md:w-[62px] h-[42px] md:h-[60px]"></a>
+                <a href="https://github.com/boom21362" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/github.png" alt="GitHub" class="w-[43px] md:w-[62px] h-[42px] md:h-[60px]"></a>
+                <a href="mailto:napatput31@hotmail.com" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/mail.png" alt="Mail" class="w-[43px] md:w-[62px] h-[42px] md:h-[60px]"></a>
+            </div>
+        
+            <a href="#" class="self-start bg-[#007f73] text-white px-6 py-3 md:py-3 md:px-6 rounded-full font-bold text-md md:text-xl shadow-none transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]" download="img/napatPutsornResume.pdf">Download CV</a>
+        </div>
 
-        <!-- Footer section -->
-         <section class="footer">
-            <div class="social-media">
-                    <a href="#"><img src="img/linkedin.png" alt="" class="sm-img"></a>
-                    <a href="#"><img src="img/github.png" alt="" class="sm-img"></a>
-                    <a href="#"><img src="img/instagram.png" alt="" class="sm-img"></a>
-                    <a href="#"><img src="img/mail.png" alt="" class="sm-img"></a>
+        <div class="hidden md:block flex-col items-center justify-center m-0">
+        
+            <div class="h-[330px] overflow-hidden" data-iframe-width="300" data-iframe-height="330" data-share-badge-id="d2b1b7d8-b2cb-4954-aa46-8d95063c5a57" data-share-badge-host="https://www.credly.com"></div>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            
+            <div class="h-[330px] overflow-hidden" data-iframe-width="300" data-iframe-height="330" data-share-badge-id="4c33ec41-c319-4207-a5e9-61176a70ecb4" data-share-badge-host="https://www.credly.com"></div>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+        </div>
+    </section>
+
+        <section class="md:flex items-center justify-center gap-[3rem] bg-[#d5fdf9] min-h-screen py-2 px-[5%]" id="about">
+            <div class="px-0 py-16">
+                <h2 class="text-[2rem] md:text-[4rem] font-bold text-left ">About <span>Me</span></h2>
+                <p class="text-[1rem] mt-4 mb-6 max-w-[650px]"> <span class="text-3xl font-bold">Engineering student at Chulalongkorn University</span>  bridging the gap between Network Engineering and Software Development. Alongside my experience designing simulated SOHO networks and mastering Cisco IOS configurations, I build full-stack web applications. This unique blend allows me to approach network infrastructure with a modern, automation-ready mindset.</p>
+                <a href="" class="self-start bg-[#007f73] text-white px-6 py-3 rounded-full font-bold text-[1.2rem] shadow-none transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Read More</a>
+            </div>
+
+            <div class="about-img">
+                <img src="img/ece-hero-research_400x500.jpg" alt="About Image" class="w-[50vw] md:w-[25vw] h-90 rounded shadow-[0_0_25px_#007f73] cursor-help md:animate-[floatImage_4s_ease-in-out_infinite] md:mr-16 mb-8 transition-all duration-400 ease-out hover:shadow-[0_0_25px_#007f73,0_0_35px_#007f73,0_0_45px_#007f73]">
+            </div>
+        </section>
+
+    <!-- Projects Session -->
+
+    <section class="min-h-screen pt-[100px] pb-0 items-center justify-center bg-white" id="project">
+        <h2 class="text-[3rem] md:text-[6rem] font-bold text-center pb-10">My <span class="text-purple-800">Projects</span></h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-10 items-stretch">
+    
+            <div class="flex-1 basis-[30rem] pb-10 block rounded-xl text-center overflow-hidden border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                <img src="img/SOHOnetwork.png" alt="Project SOHO network" class="block w-full h-auto aspect-[16/10] object-cover mx-auto border-b-4">      
+                <h3 class="text-lg md:text-[2rem] mx-auto font-bold mt-4">SOHO network </h3>
+                <p class="text-base md:text-[1.5em] my-5 max-w-[400px] mx-auto ">Small Office / Home Office network using Cisco Packet Tracer, features a centralized DHCP server managing multiple subnets.</p>    
+                <div class="flex mx-2 items-center gap-2 justify-center">
+                    <a href="https://github.com/Boom21362/SOHOnetwork" target="_blank" class="inline-block bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Github</a>
+                </div>
+            </div>
+
+            <div class="flex-1 basis-[30rem] pb-10 block rounded-xl text-center overflow-hidden border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                <img src="img/projectBun1remake.png" alt="Project Hotel Booking Bun1remake" class="block w-full h-auto aspect-[16/10] object-cover mx-auto border-b-4">      
+                <h3 class="text-lg md:text-[2rem] mx-auto font-bold mt-4">Bun1: Hotel Booking</h3>
+                <p class="text-base md:text-[1.5em] my-5 max-w-[400px] mx-auto ">A responsive hotel booking web application build using Express.js framework in Typescript with Mongodb as database.</p>    
+                <div class="flex mx-2 items-center gap-2 justify-center ">
+                    <a href="https://github.com/Boom21362/se-project-fe-68-2-bun1remake" target="_blank" class="inline-block bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Github</a>
+                    <a href="https://se-project-fe-68-2-bun1remake-rho.vercel.app/" target="_blank" class="bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Website</a>
+                </div>
+            </div>
+
+            <div class="flex-1 basis-[30rem] pb-10 block rounded-xl text-center place-content-center overflow-hidden border-[0.3rem] border-[--bg-color] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                <img src="img/minicpu.png" alt="Project minicpu in digital Software" class="max-w-full aspect-[16/10] object-cover w-full mx-auto border-b-4">      
+                <h3 class="text-lg md:text-[2rem] mx-auto font-bold mt-4">Minicpu</h3>
+                <p class="text-base md:text-[1.5em] my-5 max-w-[400px] mx-auto ">Mini-CPU is realized using a digital circuit editor with basic CPU components and digital logic implementation.</p>    
+                <div class="flex mx-2 items-center gap-2 justify-center ">
+                    <a href="https://github.com/Boom21362/DCC2025_minicpu" target="_blank" class="inline-block bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Github</a>
+                    <a href="https://github.com/Boom21362/DCC2025_minicpu/blob/main/project/Technical%20Sheet.pdf" target="_blank" class="bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Documents</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flex flex-col items-center py-10">
+            <span class="text-2xl md:text-4xl font-bold pb-4 md:pb-10">Curious for more?</span>
+            <a href="https://github.com/Boom21362" target="_blank" class="bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Check My GitHub</a>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    
+    <section class="min-h-screen pt-[100px] bg-[#d5fdf9] pb-10 md:pb-5 items-center justify-center" id="project">
+        <h2 class="text-[3rem] md:text-[6rem] font-bold text-center pb-0 md:pb-10">My <span class="text-rose-700">Certificate</span></h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-10 items-stretch py-10">
+        
+            <div class="h-fit block cursor-pointer  rounded-xl bg-white overflow-hidden border-[0.3rem] aspect-[15/10] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                <a href="https://www.credly.com/badges/2da0c4f7-49d2-4963-b1b1-ab5d462cd8bf/public_url" target="_blank"></a>
+                <img src="img/certificate/Copy of Network_Support_and_Security_certificate_napatput31-gmail-com_f43801b5-da2e-46ec-b603-30f57db74973_page-0001.jpg" alt="Network_Support_and_Security_certificate" class="block w-full h-auto object-fill">      
+                </a>    
+            </div>
+
+            <div class="h-fit block cursor-pointer  rounded-xl bg-white overflow-hidden border-[0.3rem] aspect-[15/10] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                <a href="https://www.credly.com/badges/d2b1b7d8-b2cb-4954-aa46-8d95063c5a57/public_url" target="_blank">
+                <img src="img/certificate/Copy of Network_Technician_Career_Path_certificate_napatput31-gmail-com_12a30593-a1dc-4b73-be74-7b490b2b4e9f_page-0001.jpg" alt=" Network_Technician_Career_Path_certificate" class="block w-full h-auto object-fill">      
+                </a>    
+            </div>
+
+            <div class="hidden h-fit md:block cursor-pointer rounded-xl bg-white overflow-hidden border-[0.3rem] aspect-[15/10] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                <a href="https://www.credly.com/badges/4c33ec41-c319-4207-a5e9-61176a70ecb4/public_url" target="_blank">
+                <img src="img/certificate/Copy of Python_Essentials_1_certificate_napatput31-gmail-com_2fff619b-54f1-4aa5-9893-6bb8643c2333_page-0001.jpg" alt="Python_Essentials_1_certificate" class="block w-full h-auto object-fill">      
+                </a>
+            </div>
+                <div class="hidden h-fit md:block cursor-pointer rounded-xl bg-white overflow-hidden border-[0.3rem] aspect-[15/10] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                    <a href="https://www.credly.com/badges/f0e948f3-bbdd-4a20-bdb9-13dd50303428/public_url" target="_blank">
+                    <img src="img/certificate/Network_Addressing_and_Basic_Troubleshooting_certificate_napatput31-gmail-com_fc821085-8e20-4a5c-8c58-d50e84466bd4_page-0001.jpg" alt="Network_Addressing_and_Basic_Troubleshooting_certificate" class="block w-full h-auto object-fill">      
+                    </a>
+                </div>
+
+                <div class="h-fit mblock cursor-pointer rounded-xl bg-white overflow-hidden border-[0.3rem] aspect-[15/10] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                    <a href="https://coursera.org/share/2eca5604ca42202abf45a2685eba3ecf" target="_blank">
+                    <img src="img/certificate/Google Tools of the Trade_ Linux and SQL_page-0001.jpg" alt="Network_Addressing_and_Basic_Troubleshooting_certificate" class="block w-full h-auto object-fill">      
+                    </a>
+                </div>
+                
+                <div class="hidden h-fit md:block cursor-pointer rounded-xl bg-white overflow-hidden border-[0.3rem] aspect-[15/10] transition-all duration-300 ease-out hover:border-[--main-color] hover:scale-[1.02]">
+                    <a href="https://www.credly.com/badges/f0e948f3-bbdd-4a20-bdb9-13dd50303428/public_url">
+                    <img src="img/certificate/Network_Addressing_and_Basic_Troubleshooting_certificate_napatput31-gmail-com_fc821085-8e20-4a5c-8c58-d50e84466bd4_page-0001.jpg" alt="Network_Addressing_and_Basic_Troubleshooting_certificate" class="block w-full h-auto object-fill">      
+                    </a>
+                </div>
+        </div>
+
+            <div class="flex flex-col items-center py-2 md  :py-10 ">
+                <span class="text-2xl md:text-4xl font-bold pb-4 md:pb-10">For more Information</span>
+                <div class="items-center flex gap-8 ">
+                <a href="https://www.linkedin.com/in/napat-putsorn-06199537a/" target="_blank" class="bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]">Check My LinkedIn</a>
+                <a href="#" class="bg-[#007f73] text-white px-4 py-2 md:px-[2.8rem] md:py-[1rem] rounded-[4rem] font-semibold text-md md:text-[1.6rem] tracking-[0.1rem] transition-all duration-300 hover:shadow-[0_0_1.6rem_#007f73]" download="img/certificate/academic_transcript20260525-33-1h948s.pdf">Pearson Transcript</a>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Footer section -->
+
+        <footer class="flex flex-col items-center pt-5 scale-80 md:scale-105">
+            <div class="flex justify-center gap-4 mb-6">
+                <a href="#" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/linkedin.png" alt="LinkedIn" class="w-[42px] h-[42px]"></a>
+                <a href="#" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/github.png" alt="GitHub" class="w-[42px] h-[42px]"></a>
+                <a href="#" class="transition-all duration-300 hover:scale-110 hover:bg-transparent"><img src="img/mail.png" alt="Mail" class="w-[42px] h-[42px]"></a>
             </div>
             <p class="copyright">
                 &copy;Napat Putsorn
             </p>
-         </section>
-
-         <script src="script.js"></script>
+        </footer>
+        <script src="script.js"></script>
 </body>     
 </html>
