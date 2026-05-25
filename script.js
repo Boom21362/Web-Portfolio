@@ -7,7 +7,7 @@ const mobileMenuClasses = [
   "top-[70px]",
   "left-0",
   "w-full",
-  "bg-[#007f73]",
+  "bg-[#111844]",
   "flex-col",
   "items-start",
   "p-6",
@@ -15,6 +15,11 @@ const mobileMenuClasses = [
   "shadow-lg",
   "border-t",
   "border-white/10",
+  "transition-all", 
+  "duration-300", 
+  "ease-out", 
+  "hover:scale-105", 
+  "hover:text-amber-300"
 ];
 
 menuIcon.onclick = () => {
