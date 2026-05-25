@@ -1,3 +1,5 @@
+import { animate, splitText, stagger, random, globals } from 'animejs';
+
 const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
 
