@@ -1,4 +1,5 @@
 import { animate, splitText, stagger, random, globals } from 'animejs';
+import Typed from 'typed.js';
 
 const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector(".navbar");
@@ -44,7 +45,7 @@ window.onscroll = () => {
 };
 
 //Type.js config
-var typed = new Typed(".multiple-text", {
+var typed = new Typed("#multiple-text", {
   strings: [
     "Network Engineer",
     "Network Technician",

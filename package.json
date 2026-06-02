@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "prettier": "^3.8.3"
+  },
+  "dependencies": {
+    "typed.js": "^3.0.0"
   }
 }
